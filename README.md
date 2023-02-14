@@ -12,9 +12,14 @@ Bonz.ai har skickat med ett antal bilder på de olika rummen som finns samt sin 
 
 Tekniska krav
 Webbplatsen ska använda sig av ett och samma gridsystem.
-Det ska finnas ett design system (alltså komponenter som inputfält, knappar, några färger och max två typsnitt och detta designsystem ska användas på webbplatsen. Exempel att inspireras ifrån: https://ux.mailchimp.com/patterns/color
+Det ska finnas ett design system (alltså komponenter som inputfält, knappar, några färger och max två typsnitt och detta designsystem ska användas på webbplatsen. 
+
+Exempel att inspireras ifrån: https://ux.mailchimp.com/patterns/color
+
 Skisserna kan enbart vara i desktop men sidorna ska vara responsiva.
 Ska vara komponentbaserat alltså det ska finnas en CSS-fil med komponent-klasser som ska användas för de två sidorna enligt ovan specifikation.
+
+
 Designkrav
 Temat på webbplatsen önskas vara lite futuristiskt. (Tolka det hur ni vill)
 Tydlighet ska vara i fokus.
@@ -26,12 +31,12 @@ https://drive.google.com/file/d/1B-ZIP8FXb536bRG5hhKgP43dYVdvxBO_/view?usp=shari
 
 Betygskriterier
 För att få godkänt ska du:
-
 Uppfylla de tekniska kraven
 Uppfylla designkraven
 För att få Väl Godkänt ska du:
 
 Allt i godkänt
 Använda dig av BEM som namnstandard i din CSS.
+
 Inlämning
 Inlämning sker på Learnpoint med länk till repo på Github samt länk till Figmaskiss senast 24/2 kl 23:59.
