@@ -85,17 +85,17 @@ button.footer__button:nth-child(2){
     -o-background-size: cover;
     background-size: cover;
 }
-.header__nav {
+.header__nav, .header__booking--page__nav {
     display: flex;
     width: 100%;
     margin-top: 0;
     text-align: right;
 }
-.header__nav-list {
+.header__nav-list, .header__booking-page__nav {
     list-style: none;
     width: 100%;
 }
-.header__nav-item {
+.header__nav-item, .header__booking-page{
     display: inline;
     align-items: center;
     justify-content: center;
@@ -108,13 +108,27 @@ button.footer__button:nth-child(2){
     font-weight: 400;
     letter-spacing: 0.1em;
 }
-.header__nav-link{
+.header__nav-link, .header__booking-page-nav-link{
     margin: 1.5rem;
 }
 img.header__logo{
     width: 10rem;
     height: 2rem;
     padding:1rem;
+}
+.header__boking-page{
+    height: 90vh;
+    width: 100vw;
+    background: url(/components/assets/header-hero.png) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.header__text-container--booking-page{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .header__text-container{
     display: flex;
