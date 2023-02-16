@@ -4,61 +4,85 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/90fae742c0.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="components.css" />
     <title>Document</title>
   </head>
   <body>
-    <main class="grid-container">
-      <header class="header">
-        <nav class="header__nav">
-          <img
-            class="header__logo"
-            src="/components/assets/bonz.ai-logo-white-landscape.png"
-            alt=""
-          />
-          <ul class="header__nav-list">
-            <li class="header__nav-item"></li>
-            <li class="header__nav-item">
-              <a class="header__nav-link" href="#">About us</a>
-            </li>
-            <li class="header__nav-item">
-              <a class="header__nav-link" href="#">Explore</a>
-            </li>
-            <li class="header__nav-item">
-              <a class="header__nav-link" href="#">Contact</a>
-            </li>
-          </ul>
-        </nav>
-        <section class="header__text-container">
-          <h1 class="header__heading">Start your adventure here.</h1>
-          <h2 class="header__subheading">Book an eco-house.</h2>
-          <button class="header__button">Book here!</button>
-        </section>
-      </header>
-      <section class="info">
-        <section class="info__text-container">
-          <h1 class="heading__text--medium">
+    <header class="header">
+      <nav class="header__nav">
+        <img
+        class="header__logo"
+        src="/components/assets/bonz.ai-logo-white-landscape.png"
+        alt=""
+        />
+        <ul class="header__nav-list">
+          <li class="header__nav-item"></li>
+          <li class="header__nav-item">
+            <a class="header__nav-link body__text" href="#">About us</a>
+          </li>
+          <li class="header__nav-item">
+            <a class="header__nav-link body__text" href="#">Explore</a>
+          </li>
+          <li class="header__nav-item">
+            <a class="header__nav-link body__text" href="#">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <section class="header__text-container">
+        <h1 class="header__heading">Start your adventure here.</h1>
+        <h2 class="header__subheading">Book an eco-house.</h2>
+        <button class="button header__button">Book here!</button>
+      </section>
+    </header>
+      <section class="info__card--big">
+        <article class="info__text-container">
+          <h1 class="card__heading card__heading--medium">
             A tiny eco house completely powered by ai technology - enjoy the
             magical powers and just relax.
           </h1>
-          <p class="body__text--small body__text--bold">
+          <p class="card__text--small card__text--bold">
             It's not until you go to bed and everything is quiet that you
             realize how much noise you usually have around yourself.
           </p>
-          <p class="body__text--small">
+          <p class="card__text--small">
             Our eco-hotel is located in the midst of nature and is surrounded by
             forest and a fjord flowing outside. Here it is the wind and the
             water that creates melodies
           </p>
-        </section>
-        <section class="info__img-container">
-          <img
-            class="info__picture"
-            src="/components/assets/09-day 1.png"
-            alt=""
-          />
+        </article>
+          <figure>
+            <img
+              src="/components/assets/09-day 1.png"
+              alt=""
+            />
+          </figure>
         </section>
       </section>
-    </main>
+      <article class="info__card--small">
+        <button class="button card__button">Activities</button>
+      </article>
+      <footer class="footer">
+        <section class="footer__item">
+          <h2 class="body__text">Contact Bonz.ai</h2>
+          <button class="button footer__button">Do you need help?</button>
+        </section>
+
+        <section class="footer__item">
+          <h2 class="body__text">Follow us on social media</h2>
+            <aside class="footer__item-icons">
+              <i class="fa-brands fa-facebook fa-xl"></i>
+              <i class="fa-brands fa-instagram fa-xl"></i>
+              <i class="fa-brands fa-linkedin fa-xl"></i>
+              <i class="fa-brands fa-youtube fa-xl"></i>
+          </aside>
+        </section>
+
+        <section class="footer__item">
+          <h2 class="body__text" >Don’t miss our most popular offers</h2>
+          <input class="footer__input" type="text" placeholder="Email-adress">
+          <button class="button footer__button">Subscribe</button>
+        </section>
+      </footer>
   </body>
 </html>
