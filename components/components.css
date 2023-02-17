@@ -284,7 +284,10 @@ img.header__logo{
   padding: 0.5rem 2rem 2rem 2rem;
   padding-bottom: 3rem;
 }
-.fa-solid{
+
+.fa-user,
+.fa-bed,
+.fa-bath{
     margin-right:2rem;
 }
 .booking__card--picture{
