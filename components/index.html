@@ -86,10 +86,48 @@
       <article class="info__card--small">
         <button class="button card__button">Activities</button>
       </article>
+      <section class="booking__container">
+        <article class="booking__container--column">
+          <p class="card__text--small card__text--small-opacity">Check in</p>
+          <input type="date" class="datepicker-input" />
+        </article>
+        <article class="booking__container--column">
+          <p class="card__text--small card__text--small-opacity">Check out</p>
+          <input type="date" class="datepicker-input" />
+        </article>
+        <article class="booking__container--column">
+          <p class="card__text--small card__text--small-opacity">Adult</p>
+          <select name="adults" id="adults-quantity">
+            <option value="00">00</option>
+            <option value="01">01</option>
+            <option value="02">02</option>
+            <option value="03">03</option>
+            <option value="04">04</option>
+            <option value="05">05</option>
+            <option value="06">06</option>
+          </select>
+        </article>
+        <article class="booking__container--column">
+         <p class="card__text--small card__text--small-opacity">Kids</p>
+          <select name="kids" id="kids-quantity">
+            <option value="00">00</option>
+            <option value="01">01</option>
+            <option value="02">02</option>
+            <option value="03">03</option>
+            <option value="04">04</option>
+            <option value="05">05</option>
+            <option value="06">06</option>
+          </select>
+        </article>
+        <article class="booking__container--column">
+          <p class="card__text--small card__text--small-opacity"><button class="button button__primary--visible">Add room <i class="fa-solid fa-plus fa-l"></i></button>
+          <button class="button button__primary--visible">Check availibility</button>
+        </article>
+      </section>
       <footer class="footer">
         <section class="footer__item">
           <h2 class="body__text">Contact Bonz.ai</h2>
-          <button class="button footer__button">Do you need help?</button>
+          <button class="button button__primary">Do you need help?</button>
         </section>
         <section class="footer__item">
           <h2 class="body__text">Follow us on social media</h2>
@@ -101,9 +139,9 @@
           </aside>
         </section>
         <section class="footer__item">
-          <h2 class="body__text" >Don’t miss our most popular offers</h2>
+          <h2 class="body__text" >Don't miss our most popular offers</h2>
           <input class="footer__input" type="text" placeholder="Email-adress">
-          <button class="button footer__button">Subscribe</button>
+          <button class="button button__primary">Subscribe</button>
         </section>
       </footer>
   </body>

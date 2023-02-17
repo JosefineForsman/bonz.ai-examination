@@ -34,6 +34,9 @@ font-family: 'Staatliches', cursive; */
 .card__text--bold{
     font-weight: bold;
 }
+.card__text--small-opacity{
+    color: rgba(0, 0, 0, 0.801);
+}
 .card__heading{
     font-family: Staatliches;
     font-size: 28px;
@@ -66,15 +69,36 @@ font-family: 'Staatliches', cursive; */
 .card__button{
     margin-bottom: 2rem;
 }
-.footer__button{
+.button__primary{
     height: 4rem;
     width: 17rem;
     font-size: 1.1rem;
 }
-button.footer__button:nth-child(2){
+button.button__primary:nth-child(2){
     margin-top:1rem;
 }
-
+button.button__primary:nth-child(1){
+    background-color: #65A594;
+    height: 5.5rem;
+    width: 19rem;
+    font-size: 1.1rem;
+    margin-top:1rem;
+}
+.button__primary--visible{
+    background-color: #65A594;
+    height: 4rem;
+    width: 17rem;
+    font-size: 1.1rem;
+    margin-top:1rem;
+}
+.button__primary--visible:nth-child(1){
+    background-color: white;
+    color:black;
+    border: 1px solid black;
+}
+.button__primary--visible:hover{
+    transform: scale(1.1);
+}
 /* Components */
 .header { 
     height: 100vh;
@@ -136,6 +160,55 @@ img.header__logo{
     justify-content: center;
     flex-direction: column;
 }
+.booking__container{
+    margin-top:5rem;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0rem 1rem 1rem 1rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;;
+}
+.datepicker-input::-webkit-calendar-picker-indicator {
+    opacity: 0;
+    width: 100%;
+    cursor: pointer;
+    position: absolute;
+  }
+.datepicker-input {
+    position: relative;
+    padding: 0.5rem;
+    border: none;
+    font-family: Staatliches;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 60px;
+    letter-spacing: 0.12em;
+    text-align: left;
+  }
+.booking__container--column{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    padding-left:1rem;
+    border-right: 1px solid rgba(177, 177, 177, 0.209);
+}
+.booking__container--column:last-child{
+    border-right:none;
+}
+#adults-quantity, #kids-quantity{
+    padding: 1rem;
+    border:none;
+    border-radius: 10px;
+    line-height: 60px;
+    font-size: 2rem;
+    width: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Staatliches';
+}
 .info__card--big{
     display: flex;
     max-width:1226px;
@@ -148,7 +221,6 @@ img.header__logo{
     margin-left:5rem;
 }
 .info__card--small{
-    background-color: #5C767A;
     height: 35rem;
     width: 26rem;
     background-image: url(/components/assets/sup.png);
@@ -157,7 +229,6 @@ img.header__logo{
     display: flex;
     justify-content: center;
     align-items: flex-end;
-
 }
 .footer{
     margin-top: 5rem;
