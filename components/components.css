@@ -231,6 +231,16 @@ img.header__logo{
     justify-content: center;
     align-items: flex-end;
 }
+.article__icon--item{
+    margin-top:5rem;
+    width: 14.6rem;
+    height: 14.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
 .footer{
     margin-top: 5rem;
     background-color: rgb(0, 0, 0);
