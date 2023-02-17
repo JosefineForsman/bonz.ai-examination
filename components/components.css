@@ -161,6 +161,7 @@ img.header__logo{
     flex-direction: column;
 }
 .booking__container{
+    height:9.24rem;
     margin-top:5rem;
     display:flex;
     align-items: center;
