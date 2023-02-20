@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://kit.fontawesome.com/90fae742c0.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/90fae742c0.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="/components/components.css" />
     <link rel="stylesheet" href="style.css" />
     <title>Home-page</title>
@@ -17,6 +20,7 @@
           src="/components/assets/bonz.ai-logo-white-landscape.png"
           alt=""
         />
+        <i class="hamburger fa-solid fa-bars fa-xl"></i>
         <ul class="header__nav-list">
           <li class="header__nav-item"></li>
           <li class="header__nav-item">
@@ -33,52 +37,56 @@
       <section class="header__text-container">
         <h1 class="header__heading">Start your adventure here.</h1>
         <h2 class="header__subheading">Book an eco-house.</h2>
-        <button class="header__button">Book here!</button>
+        <button class="button header__button">Book here!</button>
       </section>
     </header>
-        <article class="card">
-          <h1 class="card__heading card__heading--medium">
-            A tiny eco house completely powered by ai technology - enjoy the
-            magical powers and just relax.
-          </h1>
-          <p class="card__text--small card__text--bold">
-            It's not until you go to bed and everything is quiet that you
-            realize how much noise you usually have around yourself.
-          </p>
-          <p class="card__text--small">
-            Our eco-hotel is located in the midst of nature and is surrounded by
-            forest and a fjord flowing outside. Here it is the wind and the
-            water that creates melodies
-          </p>
-        </article>
-          <figure class="card__picture">
-            <img src="/components/assets/09-day 1.png" alt="" />
-          </figure>
-      </section>
-      <section class="card card__card-item">
-        <img src="/components/assets/sup1.png" alt="">
-          <button class="button card__button">Activities</button>
-        </article>
-        <article class="card card__card-item">
-          <img src="/components/assets/food.png" alt="">
-          <button class="button card__button">Lokal food</button>
-        </article>
-      </section>
-          <figure class="card__picture">
-            <img src="/components/assets/08-night 1.png" alt="" />
-          </figure>
-        </article>
-        <article class="card">
-          <h1 class="card__heading card__heading--medium">
-            Enjoy an evening in front of an wood stove, with the still water just behind.
-          </h1>
-          <p class="card__text--small card__text--bold">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
-          </p>
-          <p class="card__text--small">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut o consequat. Duis aute irure dolor in reprehenu
-          </p>
-        </article>
+    <main class="grid-container">
+      <article class="card">
+        <h1 class="card__heading card__heading--medium">
+          A tiny eco house completely powered by ai technology - enjoy the
+          magical powers and just relax.
+        </h1>
+        <p class="card__text--small card__text--bold">
+          It's not until you go to bed and everything is quiet that you realize
+          how much noise you usually have around yourself.
+        </p>
+        <p class="card__text--small">
+          Our eco-hotel is located in the midst of nature and is surrounded by
+          forest and a fjord flowing outside. Here it is the wind and the water
+          that creates melodies
+        </p>
+      </article>
+      <img class="card__picture" src="/components/assets/09-day 1.png" alt="" />
+      <article class="card card__card-item">
+        <img src="/components/assets/sup1.png" alt="" />
+        <button class="button card__button">Activities</button>
+      </article>
+      <article class="card card__card-item">
+        <img src="/components/assets/food.png" alt="" />
+        <button class="button card__button">Lokal food</button>
+      </article>
+
+      <!-- picture two -->
+      <img
+        class="card__picture--night"
+        src="/components/assets/08-night 1.png"
+        alt=""
+      />
+      <article class="card card__text--night">
+        <h1 class="card__heading card__heading--medium">
+          A tiny eco house completely powered by ai technology - enjoy the
+          magical powers and just relax.
+        </h1>
+        <p class="card__text--small card__text--bold">
+          It's not until you go to bed and everything is quiet that you realize
+          how much noise you usually have around yourself.
+        </p>
+        <p class="card__text--small">
+          Our eco-hotel is located in the midst of nature and is surrounded by
+          forest and a fjord flowing outside. Here it is the wind and the water
+          that creates melodies
+        </p>
+      </article>
     </main>
     <footer class="footer">
       <section class="footer__item">
@@ -87,16 +95,16 @@
       </section>
       <section class="footer__item">
         <h2 class="body__text">Follow us on social media</h2>
-          <aside class="footer__item-icons">
-            <i class="fa-brands fa-facebook fa-xl"></i>
-            <i class="fa-brands fa-instagram fa-xl"></i>
-            <i class="fa-brands fa-linkedin fa-xl"></i>
-            <i class="fa-brands fa-youtube fa-xl"></i>
+        <aside class="footer__item-icons">
+          <i class="fa-brands fa-facebook fa-xl"></i>
+          <i class="fa-brands fa-instagram fa-xl"></i>
+          <i class="fa-brands fa-linkedin fa-xl"></i>
+          <i class="fa-brands fa-youtube fa-xl"></i>
         </aside>
       </section>
       <section class="footer__item">
-        <h2 class="body__text" >Don't miss our most popular offers</h2>
-        <input class="footer__input" type="text" placeholder="Email-adress">
+        <h2 class="body__text">Don't miss our most popular offers</h2>
+        <input class="footer__input" type="text" placeholder="Email-adress" />
         <button class="button button__primary">Subscribe</button>
       </section>
     </footer>

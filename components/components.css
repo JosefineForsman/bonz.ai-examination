@@ -2,6 +2,17 @@
 /* font-family: 'Open Sans', sans-serif;
 font-family: 'Staatliches', cursive; */
 
+:root {
+    --step--2: clamp(0.52rem, calc(0.28rem + 1.18vw), 1.20rem);
+    --step--1: clamp(0.63rem, calc(0.32rem + 1.52vw), 1.50rem);
+    --step-0: clamp(0.75rem, calc(0.36rem + 1.96vw), 1.88rem);
+    --step-1: clamp(0.90rem, calc(0.40rem + 2.51vw), 2.34rem);
+    --step-2: clamp(1.08rem, calc(0.44rem + 3.22vw), 2.93rem);
+    --step-3: clamp(1.30rem, calc(0.47rem + 4.11vw), 3.66rem);
+    --step-4: clamp(1.56rem, calc(0.50rem + 5.26vw), 4.58rem);
+    --step-5: clamp(1.87rem, calc(0.53rem + 6.71vw), 5.72rem);
+    --active-color: #528B7C;
+  }
 /* Text styles */
 
 .header__nav-link--active {
@@ -11,21 +22,21 @@ font-family: 'Staatliches', cursive; */
     margin-top:10rem;
     margin-bottom:0rem;
     font-family: 'Staatliches';
-    font-size: 6rem;
+    font-size: var(--step-4);
     font-weight: 400;
     letter-spacing: 0.08em;
     color:white;
 }
 .header__subheading{
     font-family: 'Open Sans';
-    font-size: 2.5rem;
+    font-size: var(--step-2);
     font-weight: 400;
     letter-spacing: 0.1em;
     color: white;
 }
 .card__text--small{
     font-family: 'Open Sans';
-    font-size: 1rem;
+    font-size: var(--step--2);
     font-weight: 400;
     line-height: 40px;
     letter-spacing: 0.03em;
@@ -39,14 +50,11 @@ font-family: 'Staatliches', cursive; */
 }
 .card__heading{
     font-family: Staatliches;
-    font-size: 28px;
+    font-size: var(--step-0);
     font-weight: 400;
     line-height: 35px;
     letter-spacing: 0.1em;
     color:#5C767A;
-}
-.card__heading--medium{
-    font-size: 2rem;
 }
 .booking_card--number h1{
     margin:1rem;
@@ -70,64 +78,38 @@ font-family: 'Staatliches', cursive; */
     color: white;
     text-decoration: none;
     font-family: Staatliches;
-    font-size: 1.5rem;
+    font-size: var(--step--1);
     font-weight: 400;
     letter-spacing: 0.1em;
     }
-    
+
 /* Buttons */
 .button{
-    height: 4.8rem;
-    width: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 10px;
     border: 1px solid white;
     font-family: 'Staatliches';
-    font-size: 1.5rem;
-    font-weight: 400;
+    font-size: var(--step-1);
     line-height: 30px;
     letter-spacing: 0.1em;
     color:white;
-    background-color: #65a59400;
+    background-color: transparent;
 }
 .header__button{
-    height: 4.8rem;
     width: 20rem;
-    border-radius: 10px;
-    border: 1px solid white;
-    font-family: 'Staatliches';
-    font-size: 1.5rem;
-    font-weight: 400;
-    line-height: 30px;
-    letter-spacing: 0.1em;
-    color:white;
-    background-color: #65a59400;
-}
-.header__button:hover{
-    background-color: #65A594;
-    cursor: pointer;
+    height: 4rem;
 }
 .button:hover{
     background-color: #65A594;
     cursor: pointer;
 }
-.card__button{
-    position: absolute;
-    top: 89%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    background-color: var(--active-color);
-    color: white;
-    font-size: var(--step--1);
-    padding: 12px 24px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-}
 .button__primary{
     height: 4rem;
-    width: 17rem;
+    width: 17rem;;
     font-size: 1.1rem;
+    font-size: var(--step--1);
 }
 .button__primary--visible{
     background-color: #65A594;
@@ -150,6 +132,24 @@ font-family: 'Staatliches', cursive; */
 }
 .button__primary--visible:hover{
     transform: scale(1.1);
+}
+.card__button{
+    position: absolute;
+    top: 92%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: transparent;
+    border: 1px solid white;
+    color: rgb(255, 255, 255);
+    font-size: var(--step--1);
+    cursor: pointer;
+    width: 15rem;
+    height: 3.6rem;
+    border-radius: 10px;
+}
+.card__button:hover{
+    background-color: #528B7C;
 }
 /* Components */
 .header { 
@@ -217,14 +217,27 @@ img.header__logo{
 .card__card-item{
    position: relative;
 }
-.booking__container{
-    height:9.24rem;
+.booking-container{
+    width: 100%;
+    min-height:9.24rem;
     margin-top:5rem;
     display:flex;
     align-items: center;
     justify-content: center;
     padding: 0rem 1rem 1rem 1rem;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;;
+}
+.booking-container__column{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    padding-left:1rem;
+    border-right: 1px solid rgba(177, 177, 177, 0.209);
+}
+.booking-container__column:last-child{
+    border-right:none;
 }
 .datepicker-input::-webkit-calendar-picker-indicator {
     opacity: 0;
@@ -243,18 +256,6 @@ img.header__logo{
     letter-spacing: 0.12em;
     text-align: left;
   }
-.booking__container--column{
-    width: 20%;
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    justify-content: center;
-    padding-left:1rem;
-    border-right: 1px solid rgba(177, 177, 177, 0.209);
-}
-.booking__container--column:last-child{
-    border-right:none;
-}
 #adults-quantity, #kids-quantity{
     padding: 1rem;
     border:none;
@@ -267,6 +268,7 @@ img.header__logo{
     align-items: center;
     font-family: 'Staatliches';
 }
+
 .icon__item{
     margin-top:5rem;
     width: 14.6rem;
@@ -277,7 +279,7 @@ img.header__logo{
     border-radius: 50%;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
-.booking__card{
+.card__container{
     margin-top:5rem;
     height: 25rem;
     width:100%;
@@ -286,12 +288,12 @@ img.header__logo{
     border-radius: 20px;
     box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
 }
-.booking__card--text-container{
+.card__booking-container{
     display: flex;
     width: 50%;
 
 }
-.booking__card--text{
+.card__booking-card--text{
   padding: 0.5rem 2rem 2rem 2rem;
   padding-bottom: 3rem;
 }
