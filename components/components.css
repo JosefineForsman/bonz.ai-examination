@@ -114,7 +114,7 @@ font-family: 'Staatliches', cursive; */
 .button__primary--visible{
     background-color: #65A594;
     height: 4rem;
-    width: 17rem;
+    width: 80%;
     font-size: 1.1rem;
     margin-top:1rem;
 }
@@ -122,6 +122,7 @@ font-family: 'Staatliches', cursive; */
     background-color: white;
     color:black;
     border: 1px solid black;
+    max-width: 90%;
 }
 .button__primary--visible:nth-child(6){
     background-color: white;
@@ -219,7 +220,7 @@ img.header__logo{
 }
 .booking-container{
     width: 100%;
-    min-height:9.24rem;
+    min-height:7rem;
     margin-top:5rem;
     display:flex;
     align-items: center;
@@ -268,7 +269,12 @@ img.header__logo{
     align-items: center;
     font-family: 'Staatliches';
 }
-
+.icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .icon__item{
     margin-top:5rem;
     width: 14.6rem;
