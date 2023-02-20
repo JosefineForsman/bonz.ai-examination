@@ -66,6 +66,15 @@ font-family: 'Staatliches', cursive; */
     letter-spacing: 0.12em;
     color:#5C656E;
 }
+.body__text {
+    color: white;
+    text-decoration: none;
+    font-family: Staatliches;
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    }
+    
 /* Buttons */
 .button{
     height: 4.8rem;
@@ -80,27 +89,45 @@ font-family: 'Staatliches', cursive; */
     color:white;
     background-color: #65a59400;
 }
+.header__button{
+    height: 4.8rem;
+    width: 20rem;
+    border-radius: 10px;
+    border: 1px solid white;
+    font-family: 'Staatliches';
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0.1em;
+    color:white;
+    background-color: #65a59400;
+}
+.header__button:hover{
+    background-color: #65A594;
+    cursor: pointer;
+}
 .button:hover{
     background-color: #65A594;
     cursor: pointer;
 }
 .card__button{
-    margin-bottom: 2rem;
+    position: absolute;
+    top: 89%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: var(--active-color);
+    color: white;
+    font-size: var(--step--1);
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
 }
 .button__primary{
     height: 4rem;
     width: 17rem;
     font-size: 1.1rem;
-}
-button.button__primary:nth-child(2){
-    margin-top:1rem;
-}
-button.button__primary:nth-child(1){
-    background-color: #65A594;
-    height: 5.5rem;
-    width: 19rem;
-    font-size: 1.1rem;
-    margin-top:1rem;
 }
 .button__primary--visible{
     background-color: #65A594;
@@ -149,14 +176,6 @@ button.button__primary:nth-child(1){
     align-items: center;
     justify-content: center;
 }
-.body__text {
-    color: white;
-    text-decoration: none;
-    font-family: Staatliches;
-    font-size: 1.5rem;
-    font-weight: 400;
-    letter-spacing: 0.1em;
-}
 .header__nav-link, .header__booking-page-nav-link{
     margin: 1.5rem;
 }
@@ -184,6 +203,19 @@ img.header__logo{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+}
+.card{
+    width: 100%;
+}
+.card .card__text--small{
+    padding-top: 3rem;
+    margin-left:5rem;
+}
+.card__card-item img{ 
+    width: 100%;
+}
+.card__card-item{
+   position: relative;
 }
 .booking__container{
     height:9.24rem;
@@ -235,28 +267,7 @@ img.header__logo{
     align-items: center;
     font-family: 'Staatliches';
 }
-.info__card--big{
-    display: flex;
-    max-width:1226px;
-    display: flex;
-    margin-bottom: 5rem;
-    padding-top:6rem;
-}
-.info__card--big .card__text--small{
-    padding-top: 3rem;
-    margin-left:5rem;
-}
-.info__card--small{
-    height: 35rem;
-    width: 26rem;
-    background-image: url(/components/assets/sup.png);
-    background-repeat: no-repeat;
-    background-size: auto;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-}
-.article__icon--item{
+.icon__item{
     margin-top:5rem;
     width: 14.6rem;
     height: 14.6rem;
@@ -268,7 +279,7 @@ img.header__logo{
 }
 .booking__card{
     margin-top:5rem;
-    height: 24.75rem;
+    height: 25rem;
     width:100%;
     display: flex;
     justify-content: space-between;

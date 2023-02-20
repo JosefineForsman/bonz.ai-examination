@@ -2,124 +2,18 @@
 /* font-family: 'Open Sans', sans-serif;
 font-family: 'Staatliches', cursive; */
 
-/* Text styles */
-.header__nav-link--active {
-    font-weight: bold;
-}
-.header__heading{ 
-    margin-top:10rem;
-    margin-bottom:0rem;
-    font-family: 'Staatliches';
-    font-size: 6rem;
-    font-weight: 400;
-    letter-spacing: 0.08em;
-    color:white;
-}
-.header__subheading{
-    font-family: 'Open Sans';
-    font-size: 2.5rem;
-    font-weight: 400;
-    letter-spacing: 0.1em;
-    color: white;
-}
-.card__text--small{
-    font-family: 'Open Sans';
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 40px;
-    letter-spacing: 0.03em;
-    text-align: left;
-}
-.card__text--bold{
-    font-weight: bold;
-}
-.card__heading{
-    font-family: Staatliches;
-    font-size: 28px;
-    font-weight: 400;
-    line-height: 35px;
-    letter-spacing: 0.1em;
-    color:#5C767A;
-}
-.card__heading--medium{
-    font-size: 2rem;
-}
-/* Buttons */
-.header__button{
-    height: 4.8rem;
-    width: 20rem;
-    border-radius: 10px;
-    border: 1px solid white;
-    font-family: 'Staatliches';
-    font-size: 1.5rem;
-    font-weight: 400;
-    line-height: 30px;
-    letter-spacing: 0.1em;
-    color:white;
-    background-color: #65a59400;
-}
-.header__button:hover{
-    background-color: #65A594;
-    cursor: pointer;
-}
 
 /* Components */
-.header { 
-    width: 100vw;
-    height: 100vh;
-    background: url(/components/assets/header-hero1.png) no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-.header__nav {
-    display: flex;
-    width: 100%;
-    margin-top: 0;
-    text-align: right;
-}
-
-.header__nav-list {
-    list-style: none;
-    width: 100%;
-}
-.header__nav-item {
-    display: inline;
-    align-items: center;
-    justify-content: center;
-}
-
-.header__nav-link {
-    color: white;
-    text-decoration: none;
-    font-family: Staatliches;
-    font-size: 1.5rem;
-    font-weight: 400;
-    letter-spacing: 0.1em;
-    margin: 1.5rem;
-}
-img.header__logo{
-    width: 10rem;
-    height: 2rem;
-    padding:1rem;
-}
-.header__text-container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    height: 500px;
-}
 main.grid-container{
     max-width: 1226px;
     margin: 1rem auto;
     display: grid;
     grid-template-columns: repeat(6,1fr);
+    grid-auto-rows: minmax(204px, auto);
     gap:1.5rem;
 }
 .info__card--big{
-    max-width:1226px;
+    max-width:100%;
     display: flex;
     margin-bottom: 5rem;
     padding-top:6rem;
@@ -130,61 +24,27 @@ main.grid-container{
     margin-left:5rem;
 }
 .info__text-container{
-    grid-column: span 3;
+    grid-column: auto / span 3;
 }
 .info__card--big figure {
-    grid-column: span 3;
+    grid-column: auto / span 3;
     width: 100%;
 }
 .info__card--big figure img{
-    width: 33rem;
-
+    max-width: 33rem;
 }
-
-/* Media queries */
-@media(max-width:1190px){
-    .header__heading{
-        font-size: 5rem;
-    }
+.todo__card-container{
+    max-width: 100%;
+    display: flex;
+    gap:1rem;
+    grid-column: auto / span 6;
 }
-@media (max-width: 1160px){
-    .info__card--big .card__text--small{
-        padding-top:1rem;
-        line-height: 30px;
-    }
-    .card__text--bold{
-        line-height: 30px;
-    }
+.info__card--small{
+    grid-column: auto / span 3;
 }
-@media (max-width: 987px){
-    .header__heading{
-        font-size: 2rem;
-        margin-top: 3rem;
-    }
-    .header__nav-link{
-        display: none;
-    }
-    .header__button{
-        width: 60%;
-        font-size:16px;
-    }
-    .header{
-        background-size:cover;
-        /* height: 90%; */
-    }
-    .header__subheading{
-        font-size: 1.5rem;
-    }
-    .info__card--big{
-        flex-direction: column;
-    }
-    .info__card--big figure img{
-        width: 95%;
-    }
-    .info__card--big figure {
-        margin:0.5rem;
-    }
-    .info__card--big .card__text--small{
-        margin-left: 0.5rem;
-    } 
+.todo__card-container--activities{
+    background-image: url(/components/assets/sup1.png);
+}
+.todo__card-container--lokal-foods{
+    background-image: url(/components/assets/food.png);
 }
