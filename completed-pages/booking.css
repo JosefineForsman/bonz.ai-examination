@@ -10,6 +10,9 @@ main.grid-container{
     grid-auto-rows: auto;
     gap:1.5rem;
 }
+.card__heading{
+    grid-column: auto / span 2;
+}
 .booking-container{
     width: 100%;
     grid-column: auto / span 6;
@@ -25,4 +28,61 @@ main.grid-container{
 }
 .card__container--two{
     grid-column: auto / span 6;
+}
+@media (min-width: 200px) and (max-width: 767px) {
+    main.grid-container>*{
+        margin-top:1rem;
+    }
+    .booking-container{
+        flex-direction: column;
+    }
+    .booking-container__column{
+        width: 100%;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    }
+    .booking-container button.button__primary--visible{
+        width: 90%;
+    }
+    .datepicker-input{
+        padding:0;
+    }
+    .icons{
+        font-size: 2rem;
+    }
+    .footer__item:last-child {
+        display: none;
+    }
+    .footer button.button__primary{
+        width: 100%;
+    }
+    .footer{
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 2rem;
+    }
+    .icon__item{
+        width: 5rem;
+        height: 5rem;
+    }
+    .card__booking-card--text{
+        padding:0rem;
+        width: 100%;
+    }
+    .card__booking-container{
+        width: 100%;
+    }
+    .card__container{
+        flex-direction: column;
+        position: relative;
+    }
+    .booking__card--picture img{
+        width: 70%;
+    }
+    .card__booking-card--text p.card__text--small{
+        line-height: 15px;
+    }
+    .booking__card--picture{
+        display: none;
+    }
+
 }

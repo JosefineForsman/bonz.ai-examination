@@ -94,7 +94,7 @@ main.grid-container{
           }
           .card .card__heading, 
           .card__picture--night .card__heading{
-            line-height: 15px;
+            line-height: 18px;
           }
           .card .card__text--small{
               padding-top: 0;
@@ -104,9 +104,9 @@ main.grid-container{
             display: block;
           }
         }
-        @media(max-width:980px){
+        /* @media(max-width:980px){
             .card .card__text--small{
                 line-height: 20px;
                 margin-top:0;
               }
-    }
+    } */
