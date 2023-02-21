@@ -45,7 +45,6 @@ img{
         height: 50vh;
     }
     .card__container{
-        background-color: antiquewhite;
         display: flex;
         flex-direction: column-reverse;
     }
@@ -57,7 +56,8 @@ img{
         display: block;
     }
     .booking__card--picture{
-        width: 100%;
+        margin: 1rem;
+        width: 90%;
     }
     .booking-container{
         flex-direction: column;
