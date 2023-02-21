@@ -14,6 +14,13 @@ font-family: 'Staatliches', cursive; */
     --active-color: #528B7C;
   }
 /* Text styles */
+.text__heading
+
+.text__subheading
+
+.text__breadtext
+.text__breadtext--bold
+
 
 .header__nav-link--active {
     font-weight: bold;
@@ -34,23 +41,23 @@ font-family: 'Staatliches', cursive; */
     letter-spacing: 0.1em;
     color: white;
 }
-.card__text--small{
+.text__breadtext{
     font-family: 'Open Sans';
-    font-size: var(--step--2);
+    font-size: var(--step--1);
     font-weight: 400;
     line-height: 40px;
     letter-spacing: 0.03em;
     text-align: left;
 }
-.card__text--bold{
+.text__breadtext--bold{
     font-weight: bold;
 }
-.card__text--small-opacity{
+.text__breadtext--opacity{
     color: rgba(0, 0, 0, 0.801);
 }
-.card__heading{
+.text__heading{
     font-family: Staatliches;
-    font-size: var(--step-0);
+    font-size: var(--step-1);
     font-weight: 400;
     line-height: 35px;
     letter-spacing: 0.1em;
@@ -75,7 +82,7 @@ font-family: 'Staatliches', cursive; */
     letter-spacing: 0.12em;
     color:#5C656E;
 }
-.body__text {
+.navigation__text {
     color: white;
     text-decoration: none;
     font-family: Staatliches;
@@ -163,22 +170,22 @@ font-family: 'Staatliches', cursive; */
     -o-background-size: cover;
     background-size: cover;
 }
-.header__nav, .header__booking--page__nav {
+.nav{
     display: flex;
     width: 100%;
     margin-top: 0;
     text-align: right;
 }
-.header__nav-list, .header__booking-page__nav {
+.nav__list{
     list-style: none;
     width: 100%;
 }
-.header__nav-item, .header__booking-page{
+.nav__item{
     display: inline;
     align-items: center;
     justify-content: center;
 }
-.header__nav-link, .header__booking-page-nav-link{
+.nav__link {
     margin: 1.5rem;
 }
 img.header__logo{
@@ -209,7 +216,7 @@ img.header__logo{
 .card{
     width: 100%;
 }
-.card .card__text--small{
+.card .text__breadtext{
     padding-top: 3rem;
     margin-left:5rem;
 }
@@ -257,6 +264,8 @@ img.header__logo{
     line-height: 60px;
     letter-spacing: 0.12em;
     text-align: left;
+    color:black;
+    background-color: white;
   }
 #adults-quantity, #kids-quantity{
     padding: 1rem;
@@ -267,17 +276,26 @@ img.header__logo{
     width: 6rem;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     font-family: 'Staatliches';
+    color:black;
+    background-color: white;
+}
+.icon__container{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    width: 100%;
 }
 .icon{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 33%;
 }
 .icon__item{
-    margin-top:5rem;
+    margin-top:2rem;
     width: 14.6rem;
     height: 14.6rem;
     display: flex;
@@ -288,7 +306,7 @@ img.header__logo{
 }
 .card__container{
     margin-top:5rem;
-    height: 25rem;
+    /* height: 25rem; */
     width:100%;
     display: flex;
     justify-content: space-between;
@@ -297,7 +315,7 @@ img.header__logo{
 }
 .card__booking-container{
     display: flex;
-    width: 50%;
+    /* width: 50%; */
 
 }
 .card__booking-card--text{
@@ -315,22 +333,10 @@ img.header__logo{
     margin-right:2rem;
 }
 .booking__card--picture{
-    max-width: 100%;
-    background-repeat: no-repeat;
+    max-width:100%;
     border-radius: 0 20px 20px 0;
 }
-.fa-angle-right{
-    color:white;
-} 
-.fa-angle-left{
-    color:white;
-}
-.booking__card--angle-arrows{
-    margin-top:11rem;
-    padding-left: 2rem;
-    display: flex;
-    justify-content: space-between;   
-}
+
 .footer{
     margin-top: 5rem;
     background-color: rgb(0, 0, 0);

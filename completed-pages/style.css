@@ -1,18 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&family=Staatliches&display=swap');
 /* font-family: 'Open Sans', sans-serif;
 font-family: 'Staatliches', cursive; */
-:root {
-    --step--2: clamp(0.52rem, calc(0.28rem + 1.18vw), 1.20rem);
-    --step--1: clamp(0.63rem, calc(0.32rem + 1.52vw), 1.50rem);
-    --step-0: clamp(0.75rem, calc(0.36rem + 1.96vw), 1.88rem);
-    --step-1: clamp(0.90rem, calc(0.40rem + 2.51vw), 2.34rem);
-    --step-2: clamp(1.08rem, calc(0.44rem + 3.22vw), 2.93rem);
-    --step-3: clamp(1.30rem, calc(0.47rem + 4.11vw), 3.66rem);
-    --step-4: clamp(1.56rem, calc(0.50rem + 5.26vw), 4.58rem);
-    --step-5: clamp(1.87rem, calc(0.53rem + 6.71vw), 5.72rem);
-    --active-color: #528B7C;
-  }
-
 /* Components */
 img{
    width: 100%;
@@ -55,16 +43,19 @@ main.grid-container{
 }
     /* Media Query for low resolution  Tablets, Ipads */
     @media (min-width: 200px) and (max-width: 767px) {
-        main.grid-container>*{
+        main.grid-container{
             margin-top:1rem;
+            display: block;
         }
         .header{
+            background: url(/components/assets/header-hero1.png) no-repeat center; 
+            background-size: auto;
             height: 50vh;
         }
         .header__text-container .header__heading{
             margin-top:3rem;
         }
-        .header__nav-item{
+        .nav__link{
             display: none;
         }
         .header__button{
@@ -88,15 +79,15 @@ main.grid-container{
             padding:0.5rem;
             top: 84%;
         }
-        .card .card__text--small, .card__picture--night .card__text--small{
+        .card .text__breadtex--bold, .card__picture--night .text__breadtext--bold{
             line-height: 15px;
             margin-top:0;
           }
-          .card .card__heading, 
+          .card .text__heading, 
           .card__picture--night .card__heading{
             line-height: 18px;
           }
-          .card .card__text--small{
+          .card .text__breadtext{
               padding-top: 0;
               margin-left: 1rem;
           }

@@ -10,6 +10,9 @@ main.grid-container{
     grid-auto-rows: auto;
     gap:1.5rem;
 }
+img{
+    width: 100%;
+}
 .card__heading{
     grid-column: auto / span 2;
 }
@@ -17,21 +20,44 @@ main.grid-container{
     width: 100%;
     grid-column: auto / span 6;
 }
-.icon{
-    grid-column: auto / span 2;
+.icon__container{
+    grid-column: 1/ 7;
 }
 .booking__card{
     grid-column: auto/ span 6;
 }
 .card__container{
-    grid-column: auto / span 6 ;
+    grid-column: 1 / 7 ;
 }
-.card__container--two{
-    grid-column: auto / span 6;
+.hamburger{
+    position: absolute;
+    right:1rem;
+    top:2rem;
+    color:white;
+    display: none;
+
 }
+
 @media (min-width: 200px) and (max-width: 767px) {
+    .header__boking-page{
+        background: url(/components/assets/header-hero.png) no-repeat center; 
+        background-size: cover;
+        height: 50vh;
+    }
+    .card__container{
+        background-color: antiquewhite;
+        display: flex;
+        flex-direction: column-reverse;
+    }
     main.grid-container>*{
         margin-top:1rem;
+    }
+    main.grid-container{
+        margin-top:1rem;
+        display: block;
+    }
+    .booking__card--picture{
+        width: 100%;
     }
     .booking-container{
         flex-direction: column;
@@ -46,7 +72,12 @@ main.grid-container{
     .datepicker-input{
         padding:0;
     }
+    /* .card__booking-card--text{
+        padding:0;
+        margin:0;
+    } */
     .icons{
+        margin-top:0.5rem;
         font-size: 2rem;
     }
     .footer__item:last-child {
@@ -68,21 +99,10 @@ main.grid-container{
         padding:0rem;
         width: 100%;
     }
-    .card__booking-container{
-        width: 100%;
-    }
-    .card__container{
-        flex-direction: column;
-        position: relative;
-    }
-    .booking__card--picture img{
-        width: 70%;
-    }
-    .card__booking-card--text p.card__text--small{
-        line-height: 15px;
-    }
-    .booking__card--picture{
+    .nav__link{
         display: none;
     }
-
+    .hamburger{
+        display: block;
+      }
 }
