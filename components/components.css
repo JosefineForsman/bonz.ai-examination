@@ -14,13 +14,6 @@ font-family: 'Staatliches', cursive; */
     --active-color: #528B7C;
   }
 /* Text styles */
-.text__heading
-
-.text__subheading
-
-.text__breadtext
-.text__breadtext--bold
-
 
 .header__nav-link--active {
     font-weight: bold;
@@ -138,6 +131,7 @@ font-family: 'Staatliches', cursive; */
     border: 1px solid rgb(255, 255, 255);
     height: 3rem;
     background-color: #65A594;
+    margin-bottom: 1rem;
 }
 .button__primary--visible:hover{
     transform: scale(1.1);
@@ -335,6 +329,10 @@ img.header__logo{
 .booking__card--picture{
     max-width:100%;
     border-radius: 0 20px 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 1rem;
 }
 
 .footer{
