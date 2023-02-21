@@ -58,8 +58,9 @@ font-family: 'Staatliches', cursive; */
 }
 .booking_card--number h1{
     margin:1rem;
+    height: 1rem;
     font-family: Staatliches;
-    font-size: 64px;
+    font-size: var(--step-4);
     font-weight: 400;
     line-height: 80px;
     letter-spacing: 0.12em;
@@ -78,7 +79,7 @@ font-family: 'Staatliches', cursive; */
     color: white;
     text-decoration: none;
     font-family: Staatliches;
-    font-size: var(--step--1);
+    font-size: var(--step-0);
     font-weight: 400;
     letter-spacing: 0.1em;
     }
@@ -98,8 +99,8 @@ font-family: 'Staatliches', cursive; */
     background-color: transparent;
 }
 .header__button{
-    width: 20rem;
-    height: 4rem;
+    width: 22rem;
+    height: 5rem;
 }
 .button:hover{
     background-color: #65A594;
@@ -115,7 +116,7 @@ font-family: 'Staatliches', cursive; */
     background-color: #65A594;
     height: 4rem;
     width: 80%;
-    font-size: 1.1rem;
+    font-size: var(--step--1);
     margin-top:1rem;
 }
 .button__primary--visible:nth-child(1){
@@ -251,7 +252,7 @@ img.header__logo{
     padding: 0.5rem;
     border: none;
     font-family: Staatliches;
-    font-size: 2rem;
+    font-size: var(--step-1);
     font-weight: 400;
     line-height: 60px;
     letter-spacing: 0.12em;
@@ -262,7 +263,7 @@ img.header__logo{
     border:none;
     border-radius: 10px;
     line-height: 60px;
-    font-size: 2rem;
+    font-size: var(--step-1);
     width: 6rem;
     display: flex;
     justify-content: center;
@@ -300,8 +301,12 @@ img.header__logo{
 
 }
 .card__booking-card--text{
-  padding: 0.5rem 2rem 2rem 2rem;
-  padding-bottom: 3rem;
+    max-width: 100%;
+    padding: 0.5rem 2rem 2rem 2rem;
+    padding-bottom: 3rem;
+}
+.booking_card--number{
+    height: 5rem;
 }
 
 .fa-user,
@@ -310,9 +315,7 @@ img.header__logo{
     margin-right:2rem;
 }
 .booking__card--picture{
-    background-image: url(/components/assets/room-one.png);
-    height: 24.75rem;
-    width: 41.25rem;
+    max-width: 100%;
     background-repeat: no-repeat;
     border-radius: 0 20px 20px 0;
 }

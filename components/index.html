@@ -10,22 +10,22 @@
   </head>
   <body>
     <header class="header">
-      <nav class="header__nav">
+      <nav class="nav">
         <img
         class="header__logo"
         src="/components/assets/bonz.ai-logo-white-landscape.png"
         alt=""
         />
-        <ul class="header__nav-list">
-          <li class="header__nav-item"></li>
-          <li class="header__nav-item">
-            <a class="header__nav-link body__text" href="#">About us</a>
+        <ul class="nav__list">
+          <li class="nav__item"></li>
+          <li class="nav__item">
+            <a class="nav__link navigation__text" href="#">About us</a>
           </li>
-          <li class="header__nav-item">
-            <a class="header__nav-link body__text" href="#">Explore</a>
+          <li class="nav__item">
+            <a class="nav__link navigation__text" href="#">Explore</a>
           </li>
-          <li class="header__nav-item">
-            <a class="header__nav-link body__text" href="#">Contact</a>
+          <li class="nav__item">
+            <a class="nav__link navigation__text" href="#">Contact</a>
           </li>
         </ul>
       </nav>
@@ -47,13 +47,13 @@
         <ul class="header__nav-list">
           <li class="header__nav-item"></li>
           <li class="header__nav-item">
-            <a class="header__nav-link body__text" href="#">About us</a>
+            <a class="header__nav-link navigation__text" href="#">About us</a>
           </li>
           <li class="header__nav-item">
-            <a class="header__nav-link body__text" href="#">Explore</a>
+            <a class="header__nav-link navigation__text" href="#">Explore</a>
           </li>
           <li class="header__nav-item">
-            <a class="header__nav-link body__text" href="#">Contact</a>
+            <a class="header__nav-link navigation__text" href="#">Contact</a>
           </li>
         </ul>
       </nav>
@@ -62,15 +62,15 @@
       </section>
     </header>
         <article class="card">
-          <h1 class="card__heading card__heading--medium">
+          <h1 class="text__heading">
             A tiny eco house completely powered by ai technology - enjoy the
             magical powers and just relax.
           </h1>
-          <p class="card__text--small card__text--bold">
+          <p class="text__breadtext text__breadtext--bold">
             It's not until you go to bed and everything is quiet that you
             realize how much noise you usually have around yourself.
           </p>
-          <p class="card__text--small">
+          <p class="text__breadtext">
             Our eco-hotel is located in the midst of nature and is surrounded by
             forest and a fjord flowing outside. Here it is the wind and the
             water that creates melodies
@@ -86,15 +86,15 @@
       </article>
       <section class="booking-container">
         <article class="booking-container__column">
-          <p class="card__text--small card__text--small-opacity">Check in</p>
+          <p class="text__breadtext text__breadtext--opacity">Check in</p>
           <input type="date" class="datepicker-input" />
         </article>
         <article class="booking-container__column">
-          <p class="card__text--small card__text--small-opacity">Check out</p>
+          <p class="text__breadtext text__breadtext--opacity">Check out</p>
           <input type="date" class="datepicker-input" />
         </article>
         <article class="booking-container__column">
-          <p class="card__text--small card__text--small-opacity">Adult</p>
+          <p class="text__breadtext text__breadtext--opacity">Adult</p>
           <select name="adults" id="adults-quantity">
             <option value="00">00</option>
             <option value="01">01</option>
@@ -106,7 +106,7 @@
           </select>
         </article>
         <article class="booking-container__column">
-         <p class="card__text--small card__text--small-opacity">Kids</p>
+         <p class="text__breadtext text__breadtext--opacity">Kids</p>
           <select name="kids" id="kids-quantity">
             <option value="00">00</option>
             <option value="01">01</option>
@@ -118,13 +118,13 @@
           </select>
         </article>
         <article class="booking-container__column">
-          <p class="card__text--small card__text--small-opacity"><button class="button button__primary--visible">Add room <i class="fa-solid fa-plus fa-l"></i></button>
+          <p class="text__breadtext text__breadtext--opacity"><button class="button button__primary--visible">Add room <i class="fa-solid fa-plus fa-l"></i></button>
           <button class="button button__primary--visible">Check availibility</button>
         </article>
       </section>
       <article class="icon">
         <aside class="icon icon__item"><i class="fa-solid fa-car fa-4x"></i></aside>
-        <h2 class="card__heading">Free parking</h2>
+        <h2 class="text__heading">Free parking</h2>
       </article>
       <section class="card__container">
         <aside class="card__booking-container">
@@ -134,27 +134,25 @@
           <div class="card__booking-card--text">
             <h2 class="card__heading">House with sofa bed</h2>
             <h3 class="booking__card--price">199$ / night</h3>
-            <p class="card__text--small"><i class="fa-solid fa-user"></i> 2 adults + 2 kids</p>
-            <p class="card__text--small"><i class="fa-solid fa-bed"></i></i>Kingsize bed + sofa bed</p>
-            <p class="card__text--small"><i class="fa-solid fa-bath"></i></i>Shower + toilet</p>
+            <p class="text__breadtext"><i class="fa-solid fa-user"></i> 2 adults + 2 kids</p>
+            <p class="text__breadtext"><i class="fa-solid fa-bed"></i></i>Kingsize bed + sofa bed</p>
+            <p class="text__breadtext"><i class="fa-solid fa-bath"></i></i>Shower + toilet</p>
             <button class="button button__primary--visible">book now</button>
           </div>
         </aside>
         <article class="booking__card--picture">
-          <aside class="booking__card--angle-arrows">
-            <i class="fa-solid fa-angle-left fa-2x"></i>
-            <i class="fa-solid fa-angle-right fa-2x"></i>
+            <img src="/components/assets/room-one.png" alt="">
           </aside>
         </article>
 
       </section>
       <footer class="footer">
         <section class="footer__item">
-          <h2 class="body__text">Contact Bonz.ai</h2>
+          <h2 class="navigation__text">Contact Bonz.ai</h2>
           <button class="button button__primary">Do you need help?</button>
         </section>
         <section class="footer__item">
-          <h2 class="body__text">Follow us on social media</h2>
+          <h2 class="navigation__text">Follow us on social media</h2>
             <aside class="footer__item-icons">
               <i class="fa-brands fa-facebook fa-xl"></i>
               <i class="fa-brands fa-instagram fa-xl"></i>
@@ -163,7 +161,7 @@
           </aside>
         </section>
         <section class="footer__item">
-          <h2 class="body__text" >Don't miss our most popular offers</h2>
+          <h2 class="navigation__text" >Don't miss our most popular offers</h2>
           <input class="footer__input" type="text" placeholder="Email-adress">
           <button class="button button__primary">Subscribe</button>
         </section>
