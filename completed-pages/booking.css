@@ -5,7 +5,7 @@ main.grid-container>*{
     margin-top: 5rem;
 }
 main.grid-container{
-    max-width: 1226px;
+    max-width: 1000px;
     margin: 1rem auto;
     display: grid;
     grid-template-columns: repeat(6,1fr);
@@ -15,8 +15,8 @@ main.grid-container{
 img{
     width: 100%;
 }
-.card__heading{
-    grid-column: auto / span 2;
+.grid-container .text__heading{
+    grid-column: 1/3;
 }
 .booking-container{
     width: 100%;
@@ -37,7 +37,6 @@ img{
     top:2rem;
     color:white;
     display: none;
-
 }
 
 @media (min-width: 200px) and (max-width: 767px) {
@@ -74,10 +73,13 @@ img{
     .datepicker-input{
         padding:0;
     }
-    /* .card__booking-card--text{
-        padding:0;
-        margin:0;
-    } */
+    .room__button{
+        width: 80%;
+        height: 3rem;
+        padding:0.5rem;
+        margin-bottom:2rem;
+        font-size: var(--step--1);
+    }
     .icons{
         margin-top:0.5rem;
         font-size: 2rem;
@@ -97,6 +99,9 @@ img{
         width: 5rem;
         height: 5rem;
     }
+    .icon .text__heading{
+        font-size: var(--step--1);
+    }
     .card__booking-card--text{
         padding:0rem;
         width: 100%;
@@ -107,4 +112,20 @@ img{
     .hamburger{
         display: block;
       }
+    /* .button:nth-child(1),.button:nth-child(2){
+        width: 100%;
+        font-size: var(--step--1);
+    } */
+    .text__heading{
+        font-size: var(--step-1);
+    }
+    .text__breadtext{
+        font-size: var(--step--1);
+        margin: 0;
+    }
+    .booking-container__button{
+        margin-top:10px;
+        width: 90%;
+        font-size: var(--step--1);
+    }
 }

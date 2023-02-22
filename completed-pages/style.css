@@ -61,16 +61,12 @@ main.grid-container{
         .nav__link{
             display: none;
         }
-        .header__button{
-            width: 15rem;
-            height: 3.5rem;
-        }
         .footer__item:last-child {
             display: none;
         }
-        .footer button.button__primary{
+        /* .footer button.button__primary{
             width: 100%;
-        }
+        } */
         .footer{
             display: flex;
             flex-direction: column;
@@ -88,20 +84,21 @@ main.grid-container{
           }
           .card .text__heading, 
           .card__picture--night .card__heading{
-            line-height: 25px;
+            line-height: 30px;
           }
           .card .text__breadtext{
               padding-top: 0;
               margin-left: 1rem;
-              line-height: 20px;
+              line-height: 25px;
           }
           .hamburger{
             display: block;
           }
+        .text__heading{
+            font-size: var(--step-1);
         }
-        /* @media(max-width:980px){
-            .card .card__text--small{
-                line-height: 20px;
-                margin-top:0;
-              }
-    } */
+        .text__breadtext{
+            font-size: var(--step--1);
+            margin: 0;
+        }
+    }
