@@ -1,10 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Krub:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&display=swap');
 
-
-/* font-family: 'Krub', sans-serif;
-font-family: 'Open Sans', sans-serif; */
-
 :root {
     --step--2: clamp(0.52rem, calc(0.28rem + 1.18vw), 1.20rem);
     --step--1: clamp(0.63rem, calc(0.32rem + 1.52vw), 1.50rem);
@@ -17,7 +13,6 @@ font-family: 'Open Sans', sans-serif; */
     --active-color: #528B7C;
   }
 /* Text styles */
-
 .header__nav-link--active {
     font-weight: bold;
 }
@@ -28,8 +23,7 @@ font-family: 'Open Sans', sans-serif; */
     margin-bottom:0rem;
     font-weight: 400;
     letter-spacing: 0.08em;
-    color: white;
-    
+    color: white; 
 }
 .header__subheading{
     font-size: var(--step-1);
@@ -38,8 +32,6 @@ font-family: 'Open Sans', sans-serif; */
     color: white;
     font-family: Krub;
     font-style: italic;
-    text-align: left;
-
 }
 .text__breadtext{
     font-family: 'Open Sans';
@@ -47,7 +39,6 @@ font-family: 'Open Sans', sans-serif; */
     font-weight: 400;
     line-height: 40px;
     letter-spacing: 0.03em;
-    text-align: left;
     color:white;
 }
 .text__breadtext--black{
@@ -99,7 +90,6 @@ font-family: 'Open Sans', sans-serif; */
     font-weight: 400;
     letter-spacing: 0.1em;
     }
-
 /* Buttons */
 .button{
     display: flex;
@@ -274,7 +264,7 @@ img.header__logo{
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    font-family: 'Staatliches';
+    font-family: 'krub';
     color:black;
     background-color: white;
 }
@@ -316,36 +306,39 @@ img.header__logo{
 }
 .card__booking-container{
     display: flex;
-    /* width: 50%; */
-
 }
 .card__booking-card--text{
-    max-width: 100%;
-    margin-top: 2rem;
-    padding-bottom: 3rem;
+    width: 50%;
+    padding-bottom: 1rem;
 }
 .card__booking-card--text .text__breadtext {
     margin: 0;
     padding: 0;
+    width: 15rem;
 }
 .booking_card--number{
     height: 5rem;
 }
-
+.card__booking-card--text .text__heading{
+    width: 20rem;
+    margin-top:0.5rem;
+}
 .fa-user,
 .fa-bed,
 .fa-bath{
     margin-right:2rem;
 }
 .booking__card--picture{
-    max-width:100%;
+    width: 50%;
     border-radius: 0 20px 20px 0;
     display: flex;
     align-items: center;
     justify-content: center;
     padding-right: 1rem;
 }
-
+.booking__card--picture img{
+    width: 100%;
+}
 .footer{
     margin-top: 5rem;
     background-color: rgb(0, 0, 0);
