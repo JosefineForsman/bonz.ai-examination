@@ -1,4 +1,6 @@
-
+body{
+    background: linear-gradient(180deg, #04303D 0%, #000000 100%);
+}
 main.grid-container>*{
     margin-top: 5rem;
 }
@@ -26,7 +28,7 @@ img{
 .booking__card{
     grid-column: auto/ span 6;
 }
-.card__container{
+.room{
     grid-column: 1 / 7 ;
 }
 .hamburger{
@@ -39,12 +41,12 @@ img{
 }
 
 @media (min-width: 200px) and (max-width: 767px) {
-    .header__boking-page{
-        background: url(/components/assets/header-hero.png) no-repeat center; 
+    .header__booking-page{
+        background: url(/components/assets/header-hero__2.png) no-repeat center; 
         background-size: cover;
         height: 50vh;
     }
-    .card__container{
+    .room{
         display: flex;
         flex-direction: column-reverse;
     }
