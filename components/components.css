@@ -1,6 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&family=Staatliches&display=swap');
-/* font-family: 'Open Sans', sans-serif;
-font-family: 'Staatliches', cursive; */
+
+@import url('https://fonts.googleapis.com/css2?family=Krub:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&display=swap');
+
+
+/* font-family: 'Krub', sans-serif;
+font-family: 'Open Sans', sans-serif; */
 
 :root {
     --step--2: clamp(0.52rem, calc(0.28rem + 1.18vw), 1.20rem);
@@ -19,20 +22,24 @@ font-family: 'Staatliches', cursive; */
     font-weight: bold;
 }
 .header__heading{ 
+    font-size: var(--step-3);
+    font-family: 'Krub';
     margin-top:10rem;
     margin-bottom:0rem;
-    font-family: 'Staatliches';
-    font-size: var(--step-4);
     font-weight: 400;
     letter-spacing: 0.08em;
-    color:white;
+    color: white;
+    
 }
 .header__subheading{
-    font-family: 'Open Sans';
-    font-size: var(--step-2);
-    font-weight: 400;
-    letter-spacing: 0.1em;
+    font-size: var(--step-1);
+    font-weight: 300;
+    letter-spacing: 0.08em;
     color: white;
+    font-family: Krub;
+    font-style: italic;
+    text-align: left;
+
 }
 .text__breadtext{
     font-family: 'Open Sans';
@@ -41,6 +48,7 @@ font-family: 'Staatliches', cursive; */
     line-height: 40px;
     letter-spacing: 0.03em;
     text-align: left;
+    color:white;
 }
 .text__breadtext--bold{
     font-weight: bold;
@@ -49,12 +57,15 @@ font-family: 'Staatliches', cursive; */
     color: rgba(0, 0, 0, 0.801);
 }
 .text__heading{
-    font-family: Staatliches;
     font-size: var(--step-1);
-    font-weight: 400;
-    line-height: 35px;
     letter-spacing: 0.1em;
-    color:#5C767A;
+    font-family: Krub;
+    font-weight: 400;
+    line-height: 45px;
+    letter-spacing: 0.1em;
+    text-align: left;
+    color:white;
+
 }
 .booking_card--number h1{
     margin:1rem;
@@ -78,8 +89,8 @@ font-family: 'Staatliches', cursive; */
 .navigation__text {
     color: white;
     text-decoration: none;
-    font-family: Staatliches;
-    font-size: var(--step-0);
+    font-family: krub;
+    font-size: var(--step--2);
     font-weight: 400;
     letter-spacing: 0.1em;
     }
@@ -91,33 +102,32 @@ font-family: 'Staatliches', cursive; */
     justify-content: center;
     border-radius: 10px;
     border: 1px solid white;
-    font-family: 'Staatliches';
-    font-size: var(--step-1);
+    font-family: 'KRUB';
+    font-size: var(--step--1);
     line-height: 30px;
     letter-spacing: 0.1em;
     color:white;
     background-color: transparent;
-}
-.header__button{
-    width: 22rem;
-    height: 5rem;
+    height: 77px;
+    width: 348px;
+    border-radius: 10px;
 }
 .button:hover{
     background-color: #65A594;
     cursor: pointer;
 }
-.button__primary{
+.footer__button{
     height: 4rem;
     width: 17rem;;
     font-size: 1.1rem;
-    font-size: var(--step--1);
+    font-size: var(--step--2);
 }
 .button__primary--visible{
-    background-color: #65A594;
+    /* background-color: #65A594;
     height: 4rem;
     width: 80%;
     font-size: var(--step--1);
-    margin-top:1rem;
+    margin-top:1rem; */
 }
 .button__primary--visible:nth-child(1){
     background-color: white;
@@ -147,12 +157,7 @@ font-family: 'Staatliches', cursive; */
     color: rgb(255, 255, 255);
     font-size: var(--step--1);
     cursor: pointer;
-    width: 15rem;
-    height: 3.6rem;
     border-radius: 10px;
-}
-.card__button:hover{
-    background-color: #528B7C;
 }
 /* Components */
 .header { 
