@@ -76,7 +76,7 @@ main.grid-container{
             flex-direction: column;
             padding-bottom: 2rem;
         }
-        .card__button{
+        .button{
             width: 10rem;
             height: 3rem;
             padding:0.5rem;
@@ -88,11 +88,12 @@ main.grid-container{
           }
           .card .text__heading, 
           .card__picture--night .card__heading{
-            line-height: 18px;
+            line-height: 25px;
           }
           .card .text__breadtext{
               padding-top: 0;
               margin-left: 1rem;
+              line-height: 20px;
           }
           .hamburger{
             display: block;
