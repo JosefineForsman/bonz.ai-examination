@@ -158,7 +158,7 @@ font-family: 'Staatliches', cursive; */
 .header { 
     height: 100vh;
     width: 100vw;
-    background: url(/components/assets/header-hero1.png) no-repeat center center fixed; 
+    background: url(/components/assets/header-hero__1.png) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
