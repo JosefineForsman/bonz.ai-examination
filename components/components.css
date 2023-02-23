@@ -86,13 +86,13 @@
     text-align: left;
     color:#04303d48; 
 }
-.booking__card--price{
+.room__price{
     font-family: 'krub';
-    font-size: var(--step--1);
-    font-weight: 400;
+    font-size: 18px;
+    font-weight: 700;
     line-height: 25px;
     letter-spacing: 0.12em;
-    color:#5C656E;
+    color: #0A6B77;
 }
 .navigation__text {
     color: white;
@@ -319,11 +319,11 @@ img.header__logo{
 .room__details{
     display: flex;
 }
-.card__booking-card--text{
+.room__details--text{
     width: 50%;
     padding-bottom: 1rem;
 }
-.card__booking-card--text .text__bodytext {
+.room__details--text .text__bodytext {
     margin: 0;
     padding: 0;
     width: 15rem;
@@ -331,7 +331,7 @@ img.header__logo{
 .room__number{
     height: 5rem;
 }
-.card__booking-card--text .text__heading{
+.room__details--text .text__heading{
     width: 20rem;
     margin-top:0.5rem;
 }
@@ -340,7 +340,7 @@ img.header__logo{
 .fa-bath{
     margin-right:2rem;
 }
-.booking__card--picture{
+.room__picture{
     width: 50%;
     border-radius: 0 20px 20px 0;
     display: flex;
@@ -348,7 +348,7 @@ img.header__logo{
     justify-content: center;
     padding-right: 1rem;
 }
-.booking__card--picture img{
+.room__picture img{
     width: 100%;
 }
 .footer{
