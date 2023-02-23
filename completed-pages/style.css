@@ -40,6 +40,7 @@ main.grid-container{
     color:white;
     display: none;
 }
+
 @media (min-width: 200px) and (max-width: 767px) {
 main.grid-container{
     margin-top:1rem;
@@ -70,7 +71,7 @@ main.grid-container{
     padding:0.5rem;
     top: 84%;
 }
-.card .text__breadtex--bold, .card__picture--night .text__breadtext--bold{
+.card .text__bodytext--bold, .card__picture--night .text__bodytext--bold{
     line-height: 15px;
     margin-top:0;
 }
@@ -78,7 +79,7 @@ main.grid-container{
 .card__picture--night .card__heading{
     line-height: 30px;
 }
-.card .text__breadtext{
+.card .text__bodytext{
     padding-top: 0;
     margin-left: 1rem;
     line-height: 25px;
@@ -89,8 +90,17 @@ main.grid-container{
 .text__heading{
     font-size: var(--step-1);
 }
-.text__breadtext{
+.text__bodytext{
     font-size: var(--step--1);
     margin: 0;
 }
+}
+@media (min-width:200px) and (max-width:1037px){
+    .text__heading{
+        font-size: var(--step-1);
+    }
+    .card .text__bodytext{
+        font-size: var(--step--1);
+        margin-left: 1rem;
+    }
 }
