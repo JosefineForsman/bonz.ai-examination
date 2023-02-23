@@ -81,8 +81,7 @@ main.grid-container{
         font-size: var(--step--1);
     }
     .icons{
-        margin-top:0.5rem;
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
     .footer__item:last-child {
         display: none;
