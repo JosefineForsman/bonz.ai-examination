@@ -259,7 +259,7 @@ img.header__logo{
     padding: 0.5rem;
     border: none;
     font-family: 'krub';
-    font-size: var(--step--1);
+    font-size: 20px;
     font-weight: 400;
     line-height: 60px;
     letter-spacing: 0.12em;
@@ -272,7 +272,7 @@ img.header__logo{
     border:none;
     border-radius: 10px;
     line-height: 60px;
-    font-size: var(--step--1);
+    font-size: 20px;
     width: 6rem;
     display: flex;
     justify-content: center;

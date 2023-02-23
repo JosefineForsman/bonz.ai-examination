@@ -12,7 +12,10 @@ main.grid-container{
     grid-auto-rows: auto;
     gap:1.5rem;
 }
-.grid-container .text__heading--medium{
+.text__heading.text__heading--large{
+    margin-top:1rem;
+}
+.grid-container .text__heading--large{
     grid-column: 1/4;
 }
 .booking-container{
@@ -135,6 +138,11 @@ main.grid-container{
         font-size: var(--step-4);
     }
     .room__price{
+        font-size: var(--step--1);
+    }
+    #adults-quantity, 
+    #kids-quantity,
+    .datepicker-input{
         font-size: var(--step--1);
     }
 }
