@@ -103,6 +103,7 @@
     letter-spacing: 0.1em;
     }
 /* Buttons */
+
 .button{
     display: flex;
     align-items: center;
@@ -118,6 +119,7 @@
     height: 77px;
     width: 348px;
     border-radius: 10px;
+    
 }
 .button:hover{
     background-color: #0A6B77;
@@ -228,7 +230,6 @@ img.header__logo{
     background-color: white;
     width: 100%;
     min-height:5rem;
-    margin-top:5rem;
     display:flex;
     align-items: center;
     justify-content: center;
