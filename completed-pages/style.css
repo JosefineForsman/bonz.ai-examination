@@ -71,12 +71,12 @@ main.grid-container{
     padding:0.5rem;
     top: 84%;
 }
-.card .text__bodytext--bold, .card__picture--night .text__bodytext--bold{
+.card .text__bodytext,
+.card__picture--night .text__bodytext{
     line-height: 15px;
     margin-top:0;
 }
-.card .text__heading, 
-.card__picture--night .card__heading{
+.card .text__heading--large{
     line-height: 30px;
 }
 .card .text__bodytext{
@@ -87,7 +87,7 @@ main.grid-container{
 .hamburger{
     display: block;
 }
-.text__heading{
+.text__heading--large{
     font-size: var(--step-1);
 }
 .text__bodytext{
@@ -96,7 +96,7 @@ main.grid-container{
 }
 }
 @media (min-width:200px) and (max-width:1037px){
-    .text__heading{
+    .text__heading--large{
         font-size: var(--step-1);
     }
     .card .text__bodytext{
