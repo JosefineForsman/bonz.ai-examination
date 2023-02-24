@@ -1,5 +1,5 @@
 body{
-    background: linear-gradient(180deg, #04303D 0%, #000000 100%);
+    background: var(--bg-color);
 }
 main.grid-container>*{
     margin-top: 5rem;
